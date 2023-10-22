@@ -59,4 +59,11 @@ goods = {
 
 backpack_capacity = 5.5
 
+# var_1
+
 packing_backpack(goods, backpack_capacity)
+
+# var_2
+
+sorted_goods = dict(sorted(goods.items(), key=lambda x: -x[1]))
+packing_backpack(sorted_goods, backpack_capacity)

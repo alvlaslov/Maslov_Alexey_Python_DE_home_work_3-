@@ -21,7 +21,7 @@ goods = {
     'knife': 0.4,
     'folding_chair': 1.1,
     'raincoat': 0.7,
-    'first aid kit': 0.5,
+    'first_aid_kit': 0.5,
     'powerbank': 0.8,
     'flashlight': 0.3,
     'set_of_dishes': 0.4,
@@ -30,4 +30,11 @@ goods = {
 
 backpack_capacity = 5.5
 
+# var_1
+
 packing_backpack(goods, backpack_capacity)
+
+# var_2
+
+sorted_goods = dict(sorted(goods.items(), key=lambda x: -x[1]))
+packing_backpack(sorted_goods, backpack_capacity)
